@@ -1,24 +1,30 @@
 <%= money_transfer.name %> <%= t('money_transfer.in_favour_of') %>:
 <p>
-  <% if money_transfer.respond_to? :preferred_beneficiary %>
+  <% if money_transfer.respond_to? :preferred_beneficiary and money_transfer.preferred_beneficiary.present? %>
       <%= t('money_transfer.beneficiary') %>: <%= money_transfer.preferred_beneficiary %> <br/>
   <% end %>
-  <% if money_transfer.respond_to? :preferred_account_number %>
+  <% if money_transfer.respond_to? :preferred_bank and money_transfer.preferred_bank.present? %>
+      <%= t('money_transfer.bank') %>: <%= money_transfer.preferred_bank %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_agency and money_transfer.preferred_agency.present? %>
+      <%= t('money_transfer.agency') %>: <%= money_transfer.preferred_agency %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_account_number and money_transfer.preferred_account_number.present? %>
       <%= t('money_transfer.account_number') %>: <%= money_transfer.preferred_account_number %> <br/>
   <% end %>
-  <% if money_transfer.respond_to? :preferred_cin %>
+  <% if money_transfer.respond_to? :preferred_cin and money_transfer.preferred_cin.present? %>
       CIN: <%= money_transfer.preferred_cin %> <br/>
   <% end %>
-  <% if money_transfer.respond_to? :preferred_cineur %>
+  <% if money_transfer.respond_to? :preferred_cineur and money_transfer.preferred_cineur.present? %>
       CINEUR: <%= money_transfer.preferred_cineur %> <br/>
   <% end %>
-  <% if money_transfer.respond_to? :preferred_abi %>
+  <% if money_transfer.respond_to? :preferred_abi and money_transfer.preferred_abi.present? %>
       ABI: <%= money_transfer.preferred_abi %> <br/>
   <% end %>
-  <% if money_transfer.respond_to? :preferred_cab %>
+  <% if money_transfer.respond_to? :preferred_cab and money_transfer.preferred_cab.present? %>
       CAB: <%= money_transfer.preferred_cab %> <br/>
   <% end %>
-  <% if money_transfer.respond_to? :preferred_iban %>
+  <% if money_transfer.respond_to? :preferred_iban and money_transfer.preferred_iban.present? %>
       IBAN: <%= money_transfer.preferred_iban %> <br/>
   <% end %>
 </p>

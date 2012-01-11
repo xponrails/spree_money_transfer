@@ -6,3 +6,5 @@ en:
     account_number: Account Number
     payment_instructions: "Payment instrucions for order"
     note: "Payment instructions will also be sent at your email address"
+    bank: Bank
+    agency: Agency

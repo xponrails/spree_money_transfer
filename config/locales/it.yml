@@ -6,3 +6,5 @@ it:
     account_number: Numero Conto
     payment_instructions: "Istruzioni per il pagamento dell'ordine"
     note: "Le istruzioni per il pagamento verrano spedite anche via email al suo indirizzo"
+    bank: Banca
+    agency: Agenzia

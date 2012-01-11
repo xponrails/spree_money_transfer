@@ -5,6 +5,8 @@ class PaymentMethod::MoneyTransfer< PaymentMethod
   preference :cab, :string
 	preference :iban, :string
 	preference :beneficiary, :string
+  preference :bank, :string
+  preference :agency, :string
   preference :account_number, :string
   preference :send_email, :boolean
   preference :from_email, :string
