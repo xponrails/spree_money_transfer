@@ -1,0 +1,24 @@
+<%= money_transfer.name %> <%= t('money_transfer.in_favour_of') %>:
+<p>
+  <% if money_transfer.respond_to? :preferred_beneficiary %>
+      <%= t('money_transfer.beneficiary') %>: <%= money_transfer.preferred_beneficiary %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_account_number %>
+      <%= t('money_transfer.account_number') %>: <%= money_transfer.preferred_account_number %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_cin %>
+      CIN: <%= money_transfer.preferred_cin %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_cineur %>
+      CINEUR: <%= money_transfer.preferred_cineur %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_abi %>
+      ABI: <%= money_transfer.preferred_abi %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_cab %>
+      CAB: <%= money_transfer.preferred_cab %> <br/>
+  <% end %>
+  <% if money_transfer.respond_to? :preferred_iban %>
+      IBAN: <%= money_transfer.preferred_iban %> <br/>
+  <% end %>
+</p>

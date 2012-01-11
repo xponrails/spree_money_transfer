@@ -1,0 +1,7 @@
+<%= render "/shared/moneytransfer_detail", :money_transfer => payment_method %>
+
+<% if payment_method.preferred_send_email %>
+    <p>
+      <%= t('money_transfer.note') %>
+    </p>
+<% end %>

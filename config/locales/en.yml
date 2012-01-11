@@ -1,0 +1,8 @@
+---
+en:
+  money_transfer:
+    in_favour_of: in favour of
+    beneficiary: Beneficiary
+    account_number: Account Number
+    payment_instructions: "Payment instrucions for order"
+    note: "Payment instructions will also be sent at your email address"
