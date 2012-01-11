@@ -28,7 +28,6 @@ module SpreeMoneyTransfer
 
     # register of Gestpay Banca Sella BillingIntegration
     initializer "spree_money_transfer.register.payment_methods" do |app|
-      p "-----------------------------"
       app.config.spree.payment_methods += [
         PaymentMethod::MoneyTransfer
       ]
