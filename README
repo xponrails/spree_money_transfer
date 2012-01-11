@@ -1,0 +1,20 @@
+Spree Money Transfer
+==============
+by Stefano Mancini <stefano.mancini@devinterface.com> <info@devinterface.com> - http://www.devinterface.com - Gennaio 2012
+
+Spree extension for a generic money transfer like italian Bonifico Bancario or SEPA.
+
+Tested with Spree 0.70.1
+
+Config
+=======
+# add gem to Gemfile:
+	gem "spree_money_transfer", :git => 'git://github.com/xponrails/spree_money_transfer.git'
+	
+
+# bundle
+	bundle install
+
+
+Copyright (c) 2012 Stefano Mancini - devinterface.com, released under the MIT License
+
